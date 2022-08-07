@@ -45,7 +45,10 @@ class Item extends React.Component {
       this.props.currentUser &&
       this.props.currentUser.username === this.props.item.seller.username;
 
-    if (this.props.item.image === "") { this.props.item.image = "https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-5fbo2/main/frontend/public/placeholder.png"}
+    if (this.props.item.image === "") {
+      this.props.item.image =
+        "https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-5fbo2/main/frontend/public/placeholder.png";
+    }
 
     return (
       <div className="container page">
